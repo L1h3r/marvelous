@@ -27,8 +27,8 @@ defmodule Marvelous.Mixfile do
 
   defp deps do
     [
-      {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 1.0"},
+      {:cowboy, "~> 1.1.2"},
+      {:plug, "~> 1.3.3"},
       {:credo, "~> 0.6.1", only: [:dev, :test]},
       {:dialyxir, "~> 0.5.0", only: :dev, runtime: false}
     ]

@@ -4,6 +4,10 @@ defmodule Marvelous.Routes do
   plug :match
   plug :dispatch
 
+  get "/" do
+    Marvelous.Routes.IndexRoute.call(conn, nil)
+  end
+
   get "/hello" do
     Marvelous.Routes.HelloRoute.call(conn, nil)
   end
