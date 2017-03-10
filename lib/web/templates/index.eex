@@ -3,15 +3,25 @@
 <head>
   <title>Marvelous</title>
 
-  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/vendor/keen-ui.min.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+
+  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
   <div id="app">
-    This App is Marvelous
+    <ui-toolbar
+      title="Marvelous"
+      type="colored"
+      text-color="white"
+    >
+    </ui-toolbar>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.2/vue.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/keen-ui.min.js"></script>
   <script type="text/javascript" src="/assets/js/app.js"></script>
 </body>
 </html>
