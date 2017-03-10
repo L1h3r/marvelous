@@ -1,8 +1,20 @@
 defmodule Marvelous.Routes do
   use Plug.Router
 
+  if Mix.env == :dev do
+    use Plug.Debugger
+    use Plug.ErrorHandler
+  end
+
+  plug Plug.RequestId
+  plug Plug.Logger, log: :debug
+
   plug :match
   plug :dispatch
+
+  get "/" do
+    Marvelous.Routes.IndexRoute.call(conn, nil)
+  end
 
   get "/hello" do
     Marvelous.Routes.HelloRoute.call(conn, nil)
