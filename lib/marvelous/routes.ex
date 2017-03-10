@@ -2,12 +2,14 @@ defmodule Marvelous.Routes do
   use Plug.Router
 
   if Mix.env == :dev do
-    use Plug.Debugger
+    use Plug.Debugger, otp_app: :marvelous
     use Plug.ErrorHandler
   end
 
   plug Plug.RequestId
   plug Plug.Logger, log: :debug
+  plug Plug.Static, at: "/public", from: :marvelous
+  plug Plug.Parsers, parsers: [:urlencoded, :multipart, :json]
 
   plug :match
   plug :dispatch
