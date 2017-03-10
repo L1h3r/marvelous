@@ -3,6 +3,7 @@
 <head>
   <title>Marvelous</title>
 
+  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
 </head>
 <body>
