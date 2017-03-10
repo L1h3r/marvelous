@@ -4,6 +4,10 @@
   <title>Marvelous</title>
 </head>
 <body>
-  This App is Marvelous
+  <div id="app">
+    This App is Marvelous
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.2/vue.min.js"></script>
 </body>
 </html>

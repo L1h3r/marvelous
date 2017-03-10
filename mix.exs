@@ -14,7 +14,6 @@ defmodule Marvelous.Mixfile do
   end
 
   def application do
-    # Specify extra applications you'll use from Erlang/Elixir
     [
       mod: {Marvelous, []},
       applications: [
