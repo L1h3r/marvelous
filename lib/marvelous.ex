@@ -11,9 +11,10 @@ defmodule Marvelous do
     import Supervisor.Spec
 
     children = [
-      # Define workers and child supervisors to be supervised
       Plug.Adapters.Cowboy.child_spec(:http, Marvelous.Routes, [], [port: 4000])
     ]
+
+    ExSync.start()
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options

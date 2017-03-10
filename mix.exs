@@ -28,6 +28,7 @@ defmodule Marvelous.Mixfile do
     [
       {:cowboy, "~> 1.1.2"},
       {:plug, "~> 1.3.3"},
+      {:exsync, "~> 0.1.3", only: :dev},
       {:credo, "~> 0.6.1", only: [:dev, :test]},
       {:dialyxir, "~> 0.5.0", only: :dev, runtime: false}
     ]
