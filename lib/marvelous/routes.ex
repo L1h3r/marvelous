@@ -8,8 +8,11 @@ defmodule Marvelous.Routes do
 
   plug Plug.RequestId
   plug Plug.Logger, log: :debug
-  plug Plug.Static, at: "/public", from: :marvelous
   plug Plug.Parsers, parsers: [:urlencoded, :multipart, :json]
+
+  plug Plug.Static,
+    at: "/assets",
+    from: "lib/web/assets"
 
   plug :match
   plug :dispatch
